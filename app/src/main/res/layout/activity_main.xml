@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+    <RelativeLayout
+        android:id="@+id/title_view"
+        android:background="#ffff"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="10dp">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/back_img"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/icon_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:textColor="#6E6D6D"
+            android:textSize="17sp"
+            android:layout_centerInParent="true"
+            android:id="@+id/tooBar_title"
+            android:text="数字人民币"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/fl_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>
